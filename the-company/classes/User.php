@@ -144,7 +144,6 @@
 
           if($this->conn->query($sql)){
                 $this->logout();
-                # call the logout() method to remove all the sessions and redirect user to index(login)
           }else{
               dis('Error in deleting your account:'.$this->conn->error);
           }
